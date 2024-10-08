@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Sorteador de Números</title>
+        <script src="scripts/main.js"></script>
+        <link rel="stylesheet" href="styles/index.css">
+	</head>
+	<body>
+		<header>
+			<img>
+			<span>numbers</span>
+		</header>
+		<main>
+			<div class='divLeftSide'>
+				<span>ONLINE - GRATUITO</span>
+				<h1>SORTEADOR DE NÚMEROS</h1>
+				<img>
+				
+				<p class='pHowItWorks'>Como funciona o sorteador de números?</p>
+				<span class='spanHowItWorks'>O sorteador utiliza um algoritmo de geração aleatória para criar números dentro do intervalo especificado pelo usuário.
+
+				<p class='pHowItWorks'>Posso escolher o intervalo dos números?</p>
+				<span class='spanHowItWorks'>Sim, você pode definir os valores mínimo e máximo para o intervalo dos números sorteados.</span>
+			</div>
+			
+			<div class='divRightSide'>
+				<div class='divInstructions'>
+					<h2>QUERO SORTEAR:</h2>
+					<p>defina o intervalo e a quantidade de números, clique em "Sortear" e veja os resultados na tela. É rápido a fácil!
+				</div>
+
+				<div class='divForms'>
+					<div class='divResult'>
+
+					</div>
+					<div class='divRealForms'>
+						<form>
+							<label
+								id='labelInputNumber'
+								for='inputNumber'>NÚMEROS</label><br>
+							<input
+								type='number'
+								id='inputNumber'
+								placeholder="0">
+						</form>
+
+						<form>
+							<label
+								id='labelInputFrom'
+								for='inputFrom'>DE</label><br>
+							<input
+								type='number'
+								id='inputFrom'
+								placeholder="0">
+						</form>
+						<form>
+							<label
+								id='labelInputTo'
+								for='inputTo'>DE</label><br>
+							<input
+								type='number'
+								id='inputTo'
+								placeholder="0">
+						</form>
+					</div>
+				</div>
+
+				<img>
+				<div class='divButton'>
+					<img> <!-- PUT ICON DON'T REPEAT -->
+					<input
+						id='inputDontRepeat'
+						name='inputDontRepeat'
+						type="checkbox">
+					<span id='spanDontRepeat'>Não repetir número</span><br>
+					<button onclick="sortearNumeros()">SORTEAR -></button>
+				</div>
+			</div>
+		</main>
+	</body>
+</html>

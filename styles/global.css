@@ -1,0 +1,81 @@
+:root {
+    /* ================== */ /* CORES */ /* ================== */
+    /* CONTENT */
+    --content-primary: #FFFFFF;
+    --content-secondary: #C7C9CC;
+    --content-tertiary: #D9D9D9;
+    --content-brand: #C58DE7;
+    --color-inverse: #030203;
+    
+    /* BACKGROUND */
+    --background-primary: #020202;
+    --background-secondary: #111012;
+    --background-tertiary: #24222E;
+    --background-brand: #C58DE7;
+    --background-gray: #3D3D3D;
+
+    /* ACCENT */
+    --accent-pink: #D586E0;
+    --accent-blue: #91A1FA;
+    --accent-green: #77C0AF;
+    --accent-lime: #D1DC97;
+    --accent-red: #E9A9B3;
+
+    /* GRADIENT */
+    --grandient-border: #77C0AF 0%, #D1DC97 14.84%, #E9A9B3 32.15%, #D586E0 65.79%, #91A1FA 84.58%;
+    --gradient-background: #D586E0 0%, #91A1FA 98.93%;
+    --gradient-content: #C7C9CC 0%, #3D3D3D;
+
+    /* ================== */ /* TIPOGRAFIA */ /* ================== */
+    /* SORA */
+    @import url("https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap");
+    --display-large: extrabold 72px/130% Sora, sans-serif;
+    --display-medium: extrabold 40px/130% Sora, sans-serif;
+    --display-small: bold 32px/130% Sora, sans-serif;
+    /* ROBOTO MONO */
+    @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Sora:wght@100..800&display=swap");
+    --overline: bold 16px/150% Roboto Mono, sans-serif;
+    /* ROBOTO FLEX */
+    @import url("https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Sora:wght@100..800&display=swap");
+    --paragraph-large: medium 16px/1.5 Roboto Flex, sans-serif;
+    --paragraph-medium: medium 14px/1.5 'Roboto Flex', sans-serif;
+    --paragraph-small: medium 12px/1.5 Roboto Flex, sans-serif;
+    --label-medium: bold 20px/1.5 Roboto Flex, sans-serif;
+    --label-small: bold 16px/1.5 Roboto Flex, sans-serif;
+
+    /* ================== */ /* ELEMENTOS */ /* ================== */
+    background-color: var(--background-primary);
+    color: var(--content-primary);
+    font: var(--display-medium);
+    box-sizing: border-box;
+}
+
+/* ================== */ /* GLOBAL */ /* ================== */
+
+body {
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+header {
+    @media (max-width: 768px) {
+        text-align: center
+    }
+    font-family: Roboto Flex, sans-serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin: 1.7rem 0 2rem auto;
+}
+
+main {
+    @media (min-width: 769px) {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    font-size: 1rem;
+    font-family: 'Roboto Mono', sans-serif;
+    font-weight: bold;
+    width: 100%;
+    box-sizing: border-box;
+    max-width: 100%;
+}
